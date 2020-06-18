@@ -1,0 +1,7 @@
+[database_config]
+hostname = 
+database = 
+port = 
+username = 
+password = 
+
