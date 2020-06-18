@@ -18,4 +18,13 @@ def get_database_config(config_file):
         print(
             "Error reading database configuration. Does the config/config.txt file exist and have entries for "
             "hostname, username, password, database, and port?")
-        exit(1)
+    except ValueError:
+        traceback.print_exc()
+        print(
+            "Error reading database configuration. Does the config/config.txt file exist and have entries for "
+            "hostname, username, password, database, and port?")
+    except Exception as e:
+        traceback.print_exc()
+        print(
+            "Error reading database configuration. Does the config/config.txt file exist and have entries for "
+            "hostname, username, password, database, and port?")
